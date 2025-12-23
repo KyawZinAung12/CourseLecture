@@ -1,0 +1,45 @@
+1. git status
+Repository ထဲမှာ ဘာ files တွေ ပြောင်းလဲထားလဲ
+ဘာ files တွေ staging area မှာ ရှိနေလဲ ဆိုတာကို ကြည့်ရှုနိုင်ပါတယ်
+
+2. git add
+ပြောင်းလဲထားတဲ့ file တွေကို commit လုပ်ဖို့ အဆင်သင့်ပြင်ဆင်ခြင်း
+ဥပမာ: git add . (file အားလုံးထည့်ရန်)
+
+3. git commit
+ပြောင်းလဲမှုတွေကို မှတ်တမ်းတင်ခြင်း
+ဥပမာ: git commit -m "မှတ်ချက်"
+
+4. git log
+ယခင်က commit လုပ်ထားတဲ့ မှတ်တမ်းတွေကို ကြည့်ရှုနိုင်ခြင်း
+ဘယ်သူက ဘယ်အချိန်က commit လုပ်လဲ ဆိုတာပါ ကြည့်လို့ရပါတယ်
+
+5. git branch
+Branch အသစ်ဖန်တီးခြင်း
+လက်ရှိ branch များကို ကြည့်ရှုခြင်း
+ဥပမာ: git branch new-feature
+
+6. git merge
+Branch နှစ်ခုကို ပေါင်းစည်းခြင်း
+ဥပမာ: git merge new-feature
+
+7. git pull
+GitHub/GitLab ကနေ နောက်ဆုံး code changes တွေကို ယူခြင်း
+Teamwork လုပ်တဲ့အခါ အရမ်းအသုံးဝင်ပါတယ်
+
+8. git push
+ကိုယ့်စက်ထဲက code changes တွေကို online repository ကို တင်ခြင်း
+ဥပမာ: git push origin main
+
+9. git init
+ကိုယ်ပိုင် repository စဖန်တီးတာ
+.git ဆိုတဲ့ hidden folder ဖန်တီးပေးတယ်
+Staging area နဲ့ commit history ကို setup လုပ်ပေးတယ်
+လက်ရှိ folder ကို Git repository အဖြစ် ပြောင်းလဲပေးတယ်
+
+10. git clone
+သူများရဲ့ repository ကိုကူးယူတာ
+Remote repository တစ်ခုလုံးကို ကူးယူတယ်
+.git folder ကို automatically create လုပ်ပေးတယ်
+Remote connection (origin) ကို automatically setup လုပ်ပေးတယ်
+

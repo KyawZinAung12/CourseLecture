@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyaw Gyi Online Shop</title>
+    <meta name="keywords" content="Kyaw Gyi Online Shop,Online Shopping,Shopping">
+    <meta name="description"
+        content="Discover the easiest way to shop online with a wide range of products at your fingertips. From fashion, electronics, home essentials, and beauty items to the latest gadgets — everything you need is just a click away. Enjoy secure payments, fast delivery, and exclusive deals every day. Shop anytime, anywhere, and experience the convenience of online shopping with trusted quality and great prices">
+    <link rel="icon" href="images/logo.png">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- icon -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <script src="fontawesome/js/all.min.js"></script>
+
+    <!-- client logo -->
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+    <!-- Start Top Bar -->
+    <div class="bg-danger text-white py-1">
+        <div class="container">
+            <!-- Left side: Contact Info -->
+            <div class="d-inline-block small">
+                <a href="tel:+959968962449" class="text-decoration-none text-white">
+                    <i class="fa-solid fa-phone me-2"></i> +959 968 962 449
+                </a>
+                <span class="ms-3 d-none d-md-inline-block ">
+                    <a href="mailto:contact@kyawzinaung.com" class="text-decoration-none text-white" target="_blank">
+                        <i class="fa-solid fa-envelope me-2"></i> contact@kyawzinaung.com
+                    </a>
+
+                </span>
+            </div>
+
+            <!-- Right side: Social / Language -->
+            <div class="float-end">
+                <a href="#" class="text-white me-3" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-3" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-white me-3" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="text-white me-3" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Top Bar -->
+
+    <!-- Start Nav Bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="images/rm_logo.png" alt="" class="logo_img"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link nav_item active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-3 dropdown">
+                        <a class="nav-link nav_item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="product.html">Men</a></li>
+                            <li><a class="dropdown-item" href="product.html">Women</a></li>
+                            <li><a class="dropdown-item" href="product.html">Kid</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link nav_item" href="promotion.html">Promotion</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link nav_item" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link nav_item" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link nav_item" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link nav_item" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="favourite.html"><i class="fa-solid fa-heart fa-xl"></i>
+                            <span class="bg-danger text-white py-md-1 px-md-2 px-1 rounded-circle cart_noti">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="cart.html"><i class="fa-solid fa-cart-shopping fa-xl"></i>
+                            <span class="bg-danger text-white py-md-1 px-md-2 px-1 rounded-circle cart_noti">10</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Nav Bar -->
+
+    <!--  Start Modern Product Detail Section -->
+    <section class="product-detail py-5" style="background: linear-gradient(135deg, #ffffff, #f8f9fa);">
+        <div class="container py-4">
+            <div class="row">
+                
+                <!-- 🖼 Left: Product Image -->
+                <div class="col-lg-6">
+                    <div class="text-center bg-white rounded-4 shadow-sm p-3">
+                        <img id="mainImage" src="images/d1.webp" alt="Product Image" class="img-fluid rounded-4">
+                    </div>
+
+                    <!-- 🔹 Thumbnail Gallery -->
+                    <div class="d-flex gap-3 mt-4">
+                        <img src="images/d1.webp" class="thumb-img border border-2 border-danger rounded-3" 
+                            style="width: 85px; height: 85px; object-fit: cover; cursor: pointer;">
+                        <img src="images/d2.webp" class="thumb-img rounded-3 shadow-sm"
+                            style="width: 85px; height: 85px; object-fit: cover; cursor: pointer;">
+                        <img src="images/d3.webp" class="thumb-img rounded-3 shadow-sm"
+                            style="width: 85px; height: 85px; object-fit: cover; cursor: pointer;">
+                        <img src="images/d4.webp" class="thumb-img rounded-3 shadow-sm"
+                            style="width: 85px; height: 85px; object-fit: cover; cursor: pointer;">
+                    </div>
+                </div>
+
+                <!-- 💬 Right: Product Info -->
+                <div class="col-lg-6">
+                    <div class="p-3">
+                        <h2 class="fw-bold mb-2 text-dark">Ardene Microfiber Tights</h2>
+
+                        <!-- ⭐ Rating -->
+                        <div class="mb-2">
+                            <span class="text-warning">★★★★☆</span>
+                            <span class="text-muted small">(128 reviews)</span>
+                        </div>
+
+                        <!-- 💰 Price -->
+                        <div class="d-flex align-items-center mb-3">
+                            <h4 class="text-danger fw-semibold me-3 mb-0">$18.90</h4>
+                            <span class="text-muted text-decoration-line-through">$24.90</span>
+                        </div>
+
+                        <!-- 🧾 Description -->
+                        <p class="text-muted mb-4 lh-lg">
+                            Experience superior comfort with our premium microfiber tights — soft, breathable, and designed 
+                            for all-day wear. Perfect for layering or styling with your favorite outfit.
+                        </p>
+
+                        <!-- 🎨 Color Options -->
+                        <div class="mb-4">
+                            <h6 class="fw-semibold mb-2">Color:</h6>
+                            <div class="d-flex gap-2 flex-wrap">
+                                <button class="color-btn border-0 rounded-circle shadow-sm active" style="width:35px; height:35px; background:#000;"></button>
+                                <button class="color-btn border-0 rounded-circle shadow-sm" style="width:35px; height:35px; background:#b33a3a;"></button>
+                                <button class="color-btn border-0 rounded-circle shadow-sm" style="width:35px; height:35px; background:#c1b497;"></button>
+                                <button class="color-btn border-0 rounded-circle shadow-sm" style="width:35px; height:35px; background:#5f85db;"></button>
+                            </div>
+                        </div>
+
+                        <!-- 📏 Size Options -->
+                        <div class="mb-4">
+                            <h6 class="fw-semibold mb-2">Size:</h6>
+                            <div class="d-flex gap-2 flex-wrap">
+                                <button class="size-btn btn btn-outline-secondary px-3 py-1 fw-semibold">S</button>
+                                <button class="size-btn btn btn-outline-secondary px-3 py-1 fw-semibold active">M</button>
+                                <button class="size-btn btn btn-outline-secondary px-3 py-1 fw-semibold">L</button>
+                                <button class="size-btn btn btn-outline-secondary px-3 py-1 fw-semibold">XL</button>
+                            </div>
+                        </div>
+
+                        <!-- 🧮 Quantity & Buttons -->
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="input-group border rounded-pill shadow-sm" style="width: 150px;">
+                                <button class="btn btn-light border-0" type="button">−</button>
+                                <input type="text" class="form-control text-center border-0 fw-semibold" value="1">
+                                <button class="btn btn-light border-0" type="button">+</button>
+                            </div>
+
+                            <button class="btn btn-danger px-4 rounded-pill fw-semibold shadow-sm">
+                                <i class="fa-solid fa-cart-plus me-2"></i> Add to Cart
+                            </button>
+
+                            <button class="btn btn-outline-secondary rounded-circle shadow-sm">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+
+                        <p class="text-muted small">
+                            <i class="fa-solid fa-box me-2 text-success"></i> In Stock — ready to ship
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  End Modern Product Detail Section -->
+
+
+    <!-- 🛍️ Start Related Products Section -->
+    <section class="related-products py-5" style="background-color: #fff;">
+        <div class="container">
+            <h3 class="fw-bold text-center text-dark mb-4">You May Also Like</h3>
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card border-0 rounded-4 shadow-sm h-100 text-center">
+                        <img src="images/d2.webp" class="card-img-top rounded-top-4" alt="Product 1">
+                        <div class="card-body">
+                            <h6 class="fw-semibold mb-1">Classic Black Tights</h6>
+                            <p class="text-danger fw-bold mb-0">$22.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card border-0 rounded-4 shadow-sm h-100 text-center">
+                        <img src="images/d3.webp" class="card-img-top rounded-top-4" alt="Product 2">
+                        <div class="card-body">
+                            <h6 class="fw-semibold mb-1">Soft Beige Leggings</h6>
+                            <p class="text-danger fw-bold mb-0">$19.90</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card border-0 rounded-4 shadow-sm h-100 text-center">
+                        <img src="images/d4.webp" class="card-img-top rounded-top-4" alt="Product 3">
+                        <div class="card-body">
+                            <h6 class="fw-semibold mb-1">Comfy Blue Stretch Pants</h6>
+                            <p class="text-danger fw-bold mb-0">$25.50</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card border-0 rounded-4 shadow-sm h-100 text-center">
+                        <img src="images/1.jpg" class="card-img-top rounded-top-4" alt="Product 4">
+                        <div class="card-body">
+                            <h6 class="fw-semibold mb-1">Elegant Grey Leggings</h6>
+                            <p class="text-danger fw-bold mb-0">$20.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 🛍️ End Related Products Section -->
+
+
+<!-- ✨ JS for Image Switching & Active States -->
+<script>
+document.querySelectorAll('.thumb-img').forEach(img => {
+    img.addEventListener('click', e => {
+        document.getElementById('mainImage').src = e.target.src;
+        document.querySelectorAll('.thumb-img').forEach(i => i.classList.remove('border', 'border-2', 'border-danger'));
+        e.target.classList.add('border', 'border-2', 'border-danger');
+    });
+});
+
+document.querySelectorAll('.color-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelectorAll('.color-btn').forEach(b => b.classList.remove('active', 'border', 'border-dark'));
+        btn.classList.add('active', 'border', 'border-dark');
+    });
+});
+
+document.querySelectorAll('.size-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('active', 'btn-danger', 'text-white'));
+        btn.classList.add('active', 'btn-danger', 'text-white');
+    });
+});
+</script>
+
+<!-- 💅 Custom Styling -->
+<style>
+.color-btn.active {
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+
+.size-btn.active {
+    background-color: #dc3545 !important;
+    border-color: #dc3545 !important;
+    color: #fff !important;
+}
+
+.thumb-img:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
+
+.related-products .card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease-in-out;
+}
+
+.related-products img {
+    height: 230px;
+    object-fit: cover;
+}
+
+</style>
+
+
+
+
+
+
+
+    <!-- Start Footer -->
+    <footer class="footer mt-5 pt-5 pb-4 text-light">
+        <div class="container">
+            <div class="row gy-4">
+
+                <!-- Brand Info -->
+                <div class="col-md-4">
+                    <h4 class="fw-bold mb-3 text-uppercase">Kyaw<span class="text-danger">Gyi</span></h4>
+                    <p class="text-light-50 mb-3">
+                        Discover the latest fashion trends and styles at unbeatable prices.
+                        Shop smart. Look sharp.
+                    </p>
+                    <div class="social-icons d-flex gap-3 mt-3">
+                        <a href="#" class="text-light fs-5"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="text-light fs-5"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="text-light fs-5"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="text-light fs-5"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-2 col-6">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="product.html" class="footer-link">Product</a></li>
+                        <li><a href="about.html" class="footer-link">About</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Customer Service -->
+                <div class="col-md-3 col-6">
+                    <h5 class="fw-bold mb-3">Customer Service</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="faq.html" class="footer-link">FAQ</a></li>
+                        <li><a href="#" class="footer-link">Shipping & Returns</a></li>
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-link">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-3">
+                    <h5 class="fw-bold mb-3">Contact Us</h5>
+                    <p class="mb-1"><i class="fa-solid fa-location-dot me-2"></i>Yangon, Myanmar</p>
+                    <p class="mb-1"><i class="fa-solid fa-phone me-2"></i>+95 912 345 678</p>
+                    <p class="mb-1"><i class="fa-solid fa-envelope me-2"></i>contact@kyawzinaung.com</p>
+                </div>
+
+            </div>
+
+            <!-- Divider -->
+            <hr class="border-light my-4">
+
+            <!-- Copyright -->
+            <div class="text-center">
+                <p class="mb-0 small text-light-50">
+                    CopyRight © 2025 <strong>KyawGyi</strong>. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+</body>
+
+</html>

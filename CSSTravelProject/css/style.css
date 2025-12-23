@@ -42,13 +42,19 @@
     color: #234981 !important;
 }
 .nav{    
-    box-shadow: 3px 5px 50px #e6e8eb;
+    /* box-shadow: 3px 5px 50px #e6e8eb; */
+    position: fixed;
+    top: 0%;
+    z-index: 4;
+    width: 100%;
+    background-color: #ffffff;
 }
 
 /* end nav */
 
 /* start bunner */
 .bunner_logo{
+    margin-top: 70px;
     width: 100%;
 }
 .banner{
