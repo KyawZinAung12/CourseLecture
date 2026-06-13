@@ -1,0 +1,39 @@
+Place
+Price
+Package
+Member
+User Information
+Date
+Transformation
+hotel
+
+
+
+
+color (Base on logo) 60% 30% 10%
+Font Design (user smooth font) //
+Icon // 
+Image //
+
+
+
+Header
+Navigation (Unique)
+Home , About ,
+
+Body
+
+
+Footer (Unique)
+
+
+
+Online Shopping For Show
+20
+
+
+40
+
+
+100
+
