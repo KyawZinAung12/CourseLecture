@@ -335,14 +335,24 @@
     
     <script>
 
+        let thumbnails = document.querySelectorAll(".thumb_img");
+        let mainImage = document.getElementById("mainImage");
 
-        document.querySelectorAll('.thumb_img').forEach(img => {
-            img.addEventListener('click', e => {                
-                document.getElementById('mainImage').src = e.target.src;
-                // document.querySelectorAll('.thumb_img').forEach(i => i.classList.remove('border', 'border-2', 'border-danger'));
-                // e.target.classList.add('border', 'border-2', 'border-danger');
-            });
-        });
+        for (let i = 0; i < thumbnails.length; i++) {
+
+            thumbnails[i].onclick = function () {
+                mainImage.src = this.src;
+            };
+
+        }
+
+        // document.querySelectorAll('.thumb_img').forEach(img => {
+        //     img.addEventListener('click', e => {                
+        //         document.getElementById('mainImage').src = e.target.src;
+        //         // document.querySelectorAll('.thumb_img').forEach(i => i.classList.remove('border', 'border-2', 'border-danger'));
+        //         // e.target.classList.add('border', 'border-2', 'border-danger');
+        //     });
+        // });
         // document.querySelectorAll('.color-btn').forEach(btn => {
         //     btn.addEventListener('click', () => {
         //         document.querySelectorAll('.color-btn').forEach(b => b.classList.remove('active', 'border', 'border-dark'));

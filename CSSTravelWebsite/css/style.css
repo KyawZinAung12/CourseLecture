@@ -44,7 +44,7 @@
     display: inline-block;
     color: #2d3892;
     transform: translateY(-5px);
-    transition: 0.3s ease; 
+    transition: 0.3s; 
 }
 .get_started{
     background-color: #2d3892;
