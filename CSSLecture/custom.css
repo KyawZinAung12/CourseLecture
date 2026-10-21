@@ -1,0 +1,10 @@
+small{
+    /* color: red;  keyword / text */
+    /* color: #ff0000;  hex code  0 to 9 a to f */
+    /* color: #f00;  short hex code */
+    color: rgb(255, 0, 0);  /* rgb(red, green, blue) 0 to 255 */
+    text-transform: uppercase;
+    word-spacing: 15px;
+    letter-spacing: 2px;
+    line-height: 1in;
+}

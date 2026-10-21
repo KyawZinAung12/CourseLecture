@@ -1,0 +1,306 @@
+/* Universal Selector */
+*{
+    /* color: red; */
+    margin: 0;
+    padding: 0;
+}
+
+/* tag selector/element selector */
+h1{
+    color: red;
+    text-align: center;
+}
+
+/* attribute selector */
+a[title="google"]{
+    color: green;
+}
+
+
+/* id selector */
+#idselector{
+    color: blue;
+    font-size: 50px;
+}
+
+/* class selector */
+.classselector{
+    color: brown;
+    text-transform: capitalize;
+    font-size: 20px;
+    text-indent: 50px;
+}
+
+
+/* Descendant Selector */
+.desc a{
+    color: red;
+}
+
+
+/* Child Selector */
+.child > a{
+    color: red;
+}
+
+/* Pseudo */
+a:link{
+    color: red;
+    text-decoration: none;
+}
+
+a:hover{
+    color: green;
+    letter-spacing: 10px;
+}
+
+a:active{
+    color: blue;
+    font-size: 20px;
+}
+
+a:visited{
+    color: purple;
+}
+
+/* target */
+:target{
+    color: red;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+/* Border */
+
+.borderOne{
+    border: 2px double green;
+    /* size style color */
+}
+
+.borderTwo{
+    border-top: 5px solid red;
+    /* border-bottom: 5px solid red; */
+    /* border-left: 5px solid red; */
+    /* border-right: 5px solid red; */
+}
+
+/* border width */
+.borderThree{
+    border-style: solid;
+    /* border-width: 10px; */
+    /* T / R / B / L */
+    /* border-width: 5px 50px; */
+    /* T&B / L&R */
+    /* border-width: 5px 10px 50px; */
+    /* T / L&R / B */
+    border-width: 5px 10px 15px 20px;
+    /* T / R / B / L */
+}
+
+
+/* border style */
+.borderFour{
+    /* border-style: solid; */
+    /* border-style: dotted solid; */
+    /* border-style: dotted dashed solid; */
+    border-style: dotted dashed solid double;
+    border-width: 5px;
+    border-color: green yellow red blue;
+}
+
+/* Margin */
+
+.marginOne{
+    border: 2px solid red;
+    /* margin: 50px 0px 0px 0px; */
+
+    margin-top: 50px;
+
+}
+
+/* padding */
+.paddinOne{
+    border: 2px solid red;
+    /* padding: 50px; */
+
+    padding-left: 50px;
+}
+
+/* Inline Layout */
+
+.inline{
+    border: 2px solid red;
+    width: 300px;
+    display: inline-block;
+}
+
+.block{
+    border: 2px solid green;
+    width: 300px;
+    display: inline-block;
+}
+
+
+/* --- Float --- */
+
+.float_right_img{
+    width: 50%;
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+
+.float_left_img{
+    width: 50%;
+    float: left;
+}
+
+/* --- Flex --- */
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; 
+    /* top button */
+    /* justify-content: center; */
+    height: 100px;
+    background-color: red;
+}
+
+/* grid */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: auto auto auto; */
+    color: #FFFFFF;
+    /* grid-row-gap: 40px; */
+    /* grid-column-gap: 30px; */
+    /* grid-gap: 30px; */
+}
+
+.grid_child,.grid div{
+    padding: 20px;
+    text-align: center;
+}
+
+
+.row_add{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.column_add{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+
+/* .media{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+} */
+.media img{
+    width: 100%;
+}
+/* 
+@media screen and (max-width: 1024px){
+    .media{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 768px){
+    .media{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 600px){
+    .media{
+        grid-template-columns: repeat(1, 1fr);
+    }
+} */
+
+/* mobile first */ 
+.media{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+}
+@media screen and (min-width: 600px){
+    .media{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 768px){
+    .media{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (min-width: 1024px){
+    .media{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* position */
+.position_relative{
+    border: 2px solid red;
+    width: 1000px;
+    height: 500px;
+}
+.position_relative_child{
+    border: 2px solid green;
+    width: 500px;
+    height: 200px;
+    position: relative;
+    /* top button left right */
+    top: 5px;
+    left: 50px;
+}
+.position_absolute{
+    border: 2px solid brown;
+    width: 1000px;
+    height: 500px;
+    position: relative;
+}
+.position_absolute_child{
+    border: 2px solid yellow;
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    /* top button left right */
+    top: 50px;
+    right: 50px;
+}
+.fixed{
+    position: fixed;
+    top: 50px;
+    right: 50px;
+}
+
+/* font */
+.online_font {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* offline font */
+@font-face {
+    font-family: "abc";
+    src: url("Roboto_Slab/static/RobotoSlab-Thin.ttf");
+}
+
+.offline_font{
+    font-family: "abc";
+}
+
+/* .icon{
+    font-size: 50px;
+    display: inline-block;
+} */
