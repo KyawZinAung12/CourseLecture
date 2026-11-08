@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Date</h1>
+
+    <p id="time"></p>
+
+    <!-- January, February, March, April, May, June, July, August, September, October, November, December -->
+
+    <!-- 0 - Sunday, 1 - Monday, 2 - Tuesday, 3 - Wednesday, 4 - Thursday, 5 - Friday, 6 - Saturday -->
+    <script>
+        // date
+        let date = new Date();
+        console.log(date);
+
+        let getYear = date.getFullYear();
+        console.log(getYear);
+
+        let getMonth = date.getMonth();
+        console.log(getMonth); // 0 - 11
+
+        let getDay = date.getDay();
+        console.log(getDay); // 0 - 6
+
+        let getDate = date.getDate();  
+        console.log(getDate);
+
+        let getHours = date.getHours();
+        console.log(getHours);
+
+        let getMinutes = date.getMinutes();
+        console.log(getMinutes);
+
+        let getSeconds = date.getSeconds();
+        console.log(getSeconds);
+
+        let getTimeFormat = date.toLocaleTimeString();
+        console.log(getTimeFormat);
+
+        function getDateFormat(){
+            let myDate = new Date();
+            let getSeconds = myDate.getSeconds();
+            let time = document.getElementById("time");
+            time.innerHTML = getSeconds;
+        }
+        // getDateFormat();
+        setInterval(getDateFormat,1000);
+
+
+        
+
+    </script>
+</body>
+</html>

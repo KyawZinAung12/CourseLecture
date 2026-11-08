@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>String</h1>
+    <script>
+        // string concatenation
+        let firstName = "Developer";
+        let lastName = "Kyaw Gyi";
+
+        // let fullName = firstName + " " + lastName + "I am 29 years old";
+        // let fullName = `${firstName} ${lastName}. I am 29 years old`;
+
+        // console.log(fullName);
+
+        // let fullName = "<h1> My name is " + firstName + " " + lastName + "</h1>";
+        let fullName = `<h1> My name is ${firstName} ${lastName}</h1>`;
+        let fullName2 = firstName.concat(' ',lastName);
+        document.write(fullName);
+        document.write(fullName2);
+
+
+        document.write(fullName.toUpperCase());
+        document.write(fullName.toLowerCase());
+
+        let name = "My name is Kyaw Zin Aung. I am 29 years old";
+        document.write(name.substr(11,13));
+        document.write("<br>");  
+
+
+        let job = "          Developer         Kyaw Gyi               ";
+        document.write(job.trim());
+
+
+        let ser = "Developer Kyaw Gyi";
+        console.log(ser.search("Kyaw Gyi"));
+        console.log(ser.indexOf("Kyaw Gyi"));
+
+
+        let rep = "Developer Kyaw Gyi";
+        console.log(rep.replace("Developer","Student"));
+        document.write("<br>");  
+
+        let num = '1,222,344,555,666,777,888,999';
+        console.log(num.replace(/\,/g,''));
+
+
+        document.write("I'm Kyaw Zin Aung");
+        document.write("<br>");  
+
+        document.write('I\'m Kyaw Zin Aung');
+        document.write("<br>");  
+
+
+        document.write("I'm Kyaw Zin Aung, 5' 9\"");
+        document.write("<br>");
+        document.write(`I'm Kyaw Zin Aung, 5' 9" and I'm a Developer`);
+
+
+        // 
+
+
+
+
+
+
+
+        
+
+
+    </script>
+</body>
+</html>

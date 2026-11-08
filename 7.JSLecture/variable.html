@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Variable</h1>
+
+    <script>
+        // global variable
+        var name = "Kyaw Zin Aung";
+        var name = "Kyaw Zin Aung Updated";
+        name = "Kyaw Zin Aung Updated Again";
+        console.log(name);
+
+
+        // block scope
+        let fatherName = "U Maung Nyo";
+        fatherName = "U Maung Nyo Updated";
+        console.log(fatherName);
+
+        var num = 10;
+        if(num){
+            let num1 = 20;
+            let result = num + num1;
+            console.log(result);
+        }
+
+        // const variable
+        const motherName = "Daw Kyin Ohn";
+        // motherName = "Daw Kyin Ohn Updated";
+
+        console.log(motherName);
+
+    </script>
+</body>
+</html>

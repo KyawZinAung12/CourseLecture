@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Register</title>
+</head>
+<body>
+
+    <h1>Student Register</h1>
+    <form action="" name="myForm">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name"> <br><br>
+
+        <label for="age">Age</label><br>
+        <input type="number" id="age" name="age"> <br><br>
+
+        <label for="address">Address</label><br>
+        <textarea name="address" id="address"></textarea> <br><br>
+
+
+        <button type="button" onclick="showData()">Register</button>
+    </form>
+
+    <h1>Student List</h1>
+    <table cellspacing="0" cellpadding="20" border="1">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+
+        <tbody id="myTbody">
+
+        </tbody>
+    </table>
+
+
+    <script>
+        // get data
+        let studentList = [];
+        function showData(){
+            // get input data
+            // let name = document.getElementById('name').value;
+            let name = document.myForm.name.value;
+            let age = document.myForm.age.value;
+            let address = document.myForm.address.value;
+
+            // console.log(name);
+            // console.log(age);
+            // console.log(address);
+
+            // create object
+            let student = {
+                studentName : name,
+                studentAge : age,
+                studentAddress : address
+            }
+            // console.log(student);
+
+            // push object to array
+            studentList.push(student);
+
+            // console.log(studentList);
+
+           studetListToTable();
+
+        }
+
+        function studetListToTable(){
+             let html = '';
+                for(let i=0; i<studentList.length; i++){
+                    
+                    // console.log(studentList[i].studentName);
+                    html += `<tr>
+                                <td>${i+1}</td>
+                                <td>${studentList[i].studentName}</td>
+                                <td>${studentList[i].studentAge}</td>
+                                <td>${studentList[i].studentAddress}</td>
+                            </tr>`;
+                }
+
+                document.getElementById('myTbody').innerHTML = html;
+        }
+
+    </script>
+
+
+
+    <!-- homework -->
+
+
+
+
+    
+</body>
+</html>
